@@ -10,6 +10,7 @@
 #define PARTICLE_FILTER_H_
 
 #include "helper_functions.h"
+#include <map>
 
 struct Particle {
 
@@ -42,6 +43,8 @@ public:
 	
 	// Set of current particles
 	std::vector<Particle> particles;
+        //typedef std::map<int, int> obsToPredMapt;
+        //obsToPredMapt obsToPredMap;
 
 	// Constructor
 	// @param num_particles Number of particles
